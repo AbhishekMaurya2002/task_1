@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .logo img {
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .logo .bold {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .about-section {
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    background: radial-gradient(ellipse at bottom, #0a0a0a 0%, #000 100%);
+    background-size: cover;
+    min-height: 80vh;
+    position: relative;
+  }
+  
+  .about-section h1 {
+    font-size: 4rem;
+    font-family: 'Georgia', serif;
+    margin-bottom: 2rem;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #ccc;
+  }
+  
+  /* Add a smoke-like gradient at the bottom */
+  .about-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.08), transparent);
+    opacity: 0.7;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .about-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  

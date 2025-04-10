@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-section {
+    flex: 2;
+    background: linear-gradient(135deg, #121212, #000);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .logo img {
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .logo .bold {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .monetize-btn {
+    background: transparent;
+    border: 1px solid #888;
+    border-radius: 20px;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight-green {
+    color: #6af59e;
+    font-weight: 700;
+  }
+  
+  .tick {
+    font-size: 2rem;
+    color: #ff7c5b;
+    vertical-align: middle;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    position: relative;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    color: #ccc;
+  }
+  
+  .underline-red::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: red;
+    margin-top: 5px;
+    margin-left: 80px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    background: transparent;
+    border: 1px solid #888;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .scroll-indicator {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 1rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #888;
+  }
+  
+  .dot.active {
+    background: white;
+  }
+  
+  .right-section {
+    flex: 1;
+    background: #f9f9f9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mascot {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+  }
+  
+  .arrows {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.2rem;
+  }
+  
