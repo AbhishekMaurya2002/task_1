@@ -1,0 +1,172 @@
+/* Merged CSS File */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: white;
+  }
+  
+  .landing-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    flex: 2;
+    background: linear-gradient(135deg, #111, #1c1c1c);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .logo-header, .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .logo-img, .logo img {
+    height: 40px;
+    border-radius: 8px;
+  }
+  
+  .logo-text .bold, .logo .bold {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.6rem;
+    line-height: 1.4;
+    font-weight: 800;
+    color: white;
+  }
+  
+  .green, .highlight-green {
+    color: #6af59e;
+    font-weight: 700;
+  }
+  
+  .icon {
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  
+  .sub, .subtext {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 1rem;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .underline-red::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 6px;
+    background-color: red;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  
+  .cta-buttons, .scroll-indicator {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .btn, .monetize-btn {
+    background: transparent;
+    border: 1px solid #888;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dot-indicator, .scroll-indicator {
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #888;
+    border-radius: 50%;
+  }
+  
+  .dot.active {
+    background: white;
+  }
+  
+  .tap {
+    color: #888;
+    font-size: 0.8rem;
+    margin-left: 8px;
+  }
+  
+  .right {
+    flex: 1;
+    background: #fdfdfd url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .brand-img, .mascot {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    z-index: 1;
+  }
+  
+  .menu, .menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .scroll-arrows, .arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
